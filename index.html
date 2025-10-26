@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Luxusleben - Millionen, Bugatti, Ferrari, Yacht & Jet</title>
+  <!-- Font Awesome für Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-p5Q+/2L+LFwT7AfH22yOvy2jwGbSe1iYSFYJvb0zX1hYV0UI0gecy+sSOuPuGi6b3vC8KOPPbiNn0OKqTzuOXQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    /* Grundlegendes Styling */
+    :root {
+      --bg-color: #0b0c10;
+      --card-color: #1f2833;
+      --text-primary: #c5c6c7;
+      --text-secondary: #66fcf1;
+      --accent: #45a29e;
+      --radius: 16px;
+    }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: var(--bg-color);
+      color: var(--text-primary);
+      line-height: 1.5;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+    header {
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+      color: var(--text-secondary);
+    }
+    header p {
+      font-size: 1rem;
+      color: var(--text-primary);
+    }
+    main {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+      padding: 2rem 1rem;
+      flex: 1;
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .card {
+      background-color: var(--card-color);
+      border-radius: var(--radius);
+      padding: 1.5rem;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+    .card .icon {
+      font-size: 3rem;
+      color: var(--accent);
+      margin-bottom: 1rem;
+    }
+    .card h2 {
+      font-size: 1.5rem;
+      margin-bottom: 0.75rem;
+      color: var(--text-secondary);
+    }
+    .card p {
+      font-size: 0.9rem;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.75rem;
+      color: var(--text-primary);
+    }
+    /* Dekoratives Hervorheben von Millionenbeträgen */
+    .money {
+      font-size: 2rem;
+      font-weight: bold;
+      color: var(--text-secondary);
+      margin: 1rem 0;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Luxusleben</h1>
+    <p>Ein Blick auf Millionen Euro, Bugattis & Ferraris, Yacht und Privatjet</p>
+  </header>
+  <main>
+    <!-- Abschnitt Bugatti & Ferrari (an erster Stelle, damit die Autos sofort sichtbar sind) -->
+    <section class="card">
+      <div class="icon" style="font-size:4rem;"><i class="fas fa-car"></i></div>
+      <h2>Bugatti & Ferrari</h2>
+      <p>Die legendären Supercars stehen für Leistung, Design und Prestige.</p>
+    </section>
+    <!-- Abschnitt Geld -->
+    <section class="card">
+      <div class="icon"><i class="fas fa-money-bill-wave"></i></div>
+      <h2>Millionen Euro</h2>
+      <div class="money">€1.000.000</div>
+      <p>Stapelweise Bargeld – ein Symbol für wahren Reichtum.</p>
+    </section>
+    <!-- Abschnitt Yacht -->
+    <section class="card">
+      <div class="icon"><i class="fas fa-ship"></i></div>
+      <h2>Yacht</h2>
+      <p>Luxuriöse Yachten bieten Freiheit auf dem Wasser und absoluten Komfort.</p>
+    </section>
+    <!-- Abschnitt Privatjet -->
+    <section class="card">
+      <div class="icon"><i class="fas fa-plane"></i></div>
+      <h2>Privatjet</h2>
+      <p>Privatjets ermöglichen Reisen auf höchstem Niveau – stilvoll und exklusiv.</p>
+    </section>
+  </main>
+  <footer>
+    © 2025 Luxusleben – Alle Rechte vorbehalten
+  </footer>
+</body>
+</html>
