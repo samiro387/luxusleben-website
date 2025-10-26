@@ -76,6 +76,21 @@
     .card p {
       font-size: 0.9rem;
     }
+    /* Bilder für Bugatti & Ferrari */
+    .car-images {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: 1rem;
+      margin-bottom: 1rem;
+    }
+    .car-images img {
+      width: 100%;
+      max-width: 250px;
+      border-radius: var(--radius);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+    }
     footer {
       text-align: center;
       padding: 1rem;
@@ -99,7 +114,11 @@
   <main>
     <!-- Abschnitt Bugatti & Ferrari (an erster Stelle, damit die Autos sofort sichtbar sind) -->
     <section class="card">
-      <div class="icon" style="font-size:4rem;"><i class="fas fa-car"></i></div>
+      <!-- Fotos der Luxusautos: Bugatti & Ferrari -->
+      <div class="car-images">
+        <img src="Bugatti_Chiron.jpg" alt="Bugatti Chiron">
+        <img src="2560px-Ferrari_LaFerrari.jpg" alt="Ferrari LaFerrari">
+      </div>
       <h2>Bugatti & Ferrari</h2>
       <p>Die legendären Supercars stehen für Leistung, Design und Prestige.</p>
     </section>
